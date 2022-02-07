@@ -1,0 +1,321 @@
+@page {
+    size: A4;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+section {
+    width: 100vw;
+    margin-top: 40px;
+}
+
+.hero h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: -85px;
+    width: 100vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ddd {
+    position: relative;
+    left: 220px;
+}
+
+.hero .title {
+    position: relative;
+    left: 16%;
+}
+
+.title2 {
+    position: relative;
+    left: 10%;
+}
+
+.demikian {
+    position: relative;
+    top: 60px;
+    width: 100vw;
+    margin-top: 60px;
+}
+
+.menyatakan {
+    width: 80vw;
+    margin-bottom: 40px;
+}
+
+table {
+    width: max-content;
+}
+
+th {
+    width: max-content;
+}
+
+.titik {
+    position: absolute;
+    left: 25vw;
+}
+
+.titik2 {
+    position: absolute;
+    left: 35vw;
+}
+
+.content22 {
+    position: absolute;
+    left: 40vw;
+    text-transform: uppercase;
+}
+
+.v {
+    text-transform: uppercase;
+}
+
+.wrap-content {
+    position: relative;
+    top: 44px;
+    width: 77vw;
+    margin-left: auto;
+    line-height: 1.4em;
+    text-align: justify;
+    margin-right: auto;
+}
+
+.wrap-content2 {
+    position: relative;
+    top: 4px;
+    width: 77vw;
+    right: 15%;
+    margin-left: auto;
+    transform: scale(0.9);
+    margin-right: auto;
+}
+
+.tbl2 {
+    transform: scale(0.85);
+    position: relative;
+    right: 13%;
+}
+
+.wrap-content {
+    position: relative;
+    top: 44px;
+    width: 77vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ft {
+    position: relative;
+    left: 20%;
+    margin-top: 50px;
+}
+
+.ft23 {
+    position: relative;
+    margin-left: 80%;
+    margin-top: 120px;
+}
+
+.wrap-card-ktp {
+    width: 100vw;
+    display: flex;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    height: max-content;
+}
+
+.card-ktp {
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px 20px 0px 20px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.card-ktp-left {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 14px;
+}
+
+.card-ktp-right {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-ktp-right img {
+    width: 100%;
+    border-radius: 12px;
+    height: auto;
+}
+
+.kpu {
+    position: relative;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    left: 60%;
+    height: 100px;
+    margin-top: 80px;
+}
+
+@media print {
+    .jk {
+        page-break-before: always;
+        width: 100vw;
+        text-align: justify;
+        text-indent: 20px;
+        margin-top: 30px;
+    }
+    .ftr {
+        page-break-before: always;
+    }
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 290px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer div {
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.lls {
+    margin-right: 100px;
+}
+
+.llr {
+    margin-left: 100px;
+}
+
+.footer .box {
+    position: absolute;
+    width: 130px;
+    height: 120px;
+    border: 1px solid black;
+}
+
+.box p {
+    margin-left: 0px;
+}
+
+.header {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+}
+
+.box2 {
+    position: relative;
+    width: 360px;
+    margin-left: 55px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box2 img {
+    border-radius: 14px;
+}
+
+.alamat {
+    margin-top: 60px;
+    display: flex;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-biodata {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+}
+
+.content-biodata div {
+    margin-top: -5px;
+}
+
+.ket {
+    position: relative;
+    margin-top: 300px;
+    margin-bottom: 100px;
+}
+
+.alamat .alamat2 {
+    width: 50%;
+    position: relative;
+    left: -10px;
+    margin-top: -50px;
+}
+
+.alamat2 div {
+    margin: 10px;
+}
+
+.ttd {
+    position: relative;
+    width: 100vw;
+    margin-left: 30%;
+    right: 0;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.tg {
+    margin-top: 20px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+td,
+tr,
+th {
+    border: 1px solid black;
+}
+
+tr {
+    height: 40px;
+}
+
+.berdasarkan {
+    position: relative;
+}
