@@ -33,8 +33,9 @@ class PencegahanController extends Controller
                 ->orderBy('updated_at', 'DESC')
                 ->get())
                 ->addColumn('biodata', 'admin.pencegahan.biodata')
+                ->addColumn('pasal', 'admin.pencegahan.pasal')
                 ->addColumn('action', 'admin.pencegahan.action')
-                ->rawColumns(['biodata', 'action'])
+                ->rawColumns(['pasal', 'biodata', 'action'])
                 ->addIndexColumn()
                 ->make(true);
         }

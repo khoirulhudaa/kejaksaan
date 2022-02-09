@@ -21,7 +21,7 @@
                         <div
                             class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
                             <div class="login-brand">
-                                <img src="https://kejari-pagaralam.kejaksaan.go.id/sipatal/backend/img/KejaksaanRI.png" alt="logo" width="100"
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Kejaksaan_Agung_Republik_Indonesia_new_logo.png" alt="logo" width="100"
                                 <font size="18">
                                 <br>SIPATAL 
                                 <br>

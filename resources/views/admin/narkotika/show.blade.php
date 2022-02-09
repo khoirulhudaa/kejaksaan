@@ -23,18 +23,18 @@
         <h4 class="text-center">LAPORAN PERKARA TINDAK PIDANA NARKOTIKA</h4>
         <h5 class="text-center">Bulan {{ $month }} Tahun {{ $year }}</h5>
         <br />
-        <div class="table-responsive">
-            <table class="table table-sm table-bordered" id="report">
+        <div class="table">
+            <table class="table table-sm table-bordered" id="report" style="transform: scale(0.7);position: relative;margin-left: -290px;">
                 <thead class="table">
-                    <tr height="50px" class="text-center text-wrap" style="width: 8rem">
-                        <th scope="col">No</th>
-                        <th scope="col">IDENTITAS TERDAKWA</th>
-                        <th scope="col">PASAL YANG DILANGGAR</th>
-                        <th scope="col">PRA PENUNTUTAN</th>
-                        <th scope="col">PENUNTUTAN</th>
-                        <th scope="col">EKSEKUSI</th>
-                        <th scope="col">UPAYA HUKUM</th>
-                        <th scope="col">KETERANGAN</th>
+                    <tr height="50px" class="text-center text-wrap">
+                        <th>No</th>
+                        <th>IDENTITAS TERDAKWA</th>
+                        <th>PASAL YANG DILANGGAR</th>
+                        <th>PRA PENUNTUTAN</th>
+                        <th>PENUNTUTAN</th>
+                        <th>EKSEKUSI</th>
+                        <th>UPAYA HUKUM</th>
+                        <th>KETERANGAN</th>
                     </tr>
                     <tr height="5px" class="fs-6 text-center">
                         <td>1</td>

@@ -33,8 +33,9 @@ class NarkotikaController extends Controller
                 ->orderBy('updated_at', 'DESC')
                 ->get())
                 ->addColumn('biodata', 'admin.narkotika.biodata')
+                ->addColumn('pasal', 'admin.narkotika.pasal')
                 ->addColumn('action', 'admin.narkotika.action')
-                ->rawColumns(['biodata', 'action'])
+                ->rawColumns(['pasal', 'biodata', 'action'])
                 ->addIndexColumn()
                 ->make(true);
         }

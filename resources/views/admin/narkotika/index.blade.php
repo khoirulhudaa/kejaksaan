@@ -57,7 +57,7 @@
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table table-sm table-hover" id="ebook-table">
+                            <table class="table table-sm table-hover" id="ebook-table" width="100%">
                                 <thead class="thead-light">
                                     <tr>
                                         <th>No</th>

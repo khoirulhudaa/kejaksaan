@@ -33,8 +33,9 @@ class KorupsiController extends Controller
                 ->orderBy('updated_at', 'DESC')
                 ->get())
                 ->addColumn('biodata', 'admin.korupsi.biodata')
+                ->addColumn('pasal', 'admin.korupsi.pasal')
                 ->addColumn('action', 'admin.korupsi.action')
-                ->rawColumns(['biodata', 'action'])
+                ->rawColumns(['pasal', 'biodata', 'action'])
                 ->addIndexColumn()
                 ->make(true);
         }
@@ -196,30 +197,30 @@ class KorupsiController extends Controller
     {
         $month = request()->post('bulan');
         $bulan = request()->post('bulan');
-        if ($month === 'Januari') {
-            $month = '01';
-        } else if ($month === 'Februari') {
-            $month = '02';
-        } else if ($month === 'Maret') {
-            $month = '03';
-        } else if ($month === 'April') {
-            $month = '04';
-        } else if ($month === 'Mei') {
-            $month = '05';
-        } else if ($month === 'Juni') {
-            $month = '06';
-        } else if ($month === 'Juli') {
-            $month = '07';
-        } else if ($month === 'Agustus') {
-            $month = '08';
-        } else if ($month === 'September') {
-            $month = '09';
-        } else if ($month === 'Oktober') {
-            $month = '10';
-        } else if ($month === 'November') {
-            $month = '11';
-        } else if ($month === 'Desember') {
-            $month = '12';
+        if ($bulan == 'JANUARI') {
+            $bulan = '01';
+        } else if ($bulan == 'FEBRUARI') {
+            $bulan = '02';
+        } else if ($bulan == 'MARET') {
+            $bulan = '03';
+        } else if ($bulan == 'APRIL') {
+            $bulan = '04';
+        } else if ($bulan == 'MEI') {
+            $bulan = '05';
+        } else if ($bulan == 'JUNI') {
+            $bulan = '06';
+        } else if ($bulan == 'JULI') {
+            $bulan = '07';
+        } else if ($bulan == 'AGUSTUS') {
+            $bulan = '08';
+        } else if ($bulan == 'SEPTEMBER') {
+            $bulan = '09';
+        } else if ($bulan == 'OKTOBER') {
+            $bulan = '10';
+        } else if ($bulan == 'NOVEMBER') {
+            $bulan = '11';
+        } else if ($bulan == 'DESEMBER') {
+            $bulan = '12';
         }
         $year = request()->post('tahun');
         $data = Korupsi::with('biodata')->orderBy('updated_at', 'DESC')->orderBy('updated_at', 'DESC')->whereYear('tgl', '=', $year)

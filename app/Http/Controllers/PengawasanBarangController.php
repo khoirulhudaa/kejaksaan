@@ -66,8 +66,10 @@ class PengawasanBarangController extends Controller
             'keterangan'            => 'nullable|string',
         ], $this->customMessages);
 
+        $kecamatan         = Kecamatan::where('name', request()->post('kecamatan_id'))->get();
+
         $data = new PengawasanBarang();
-        $data->kecamatan_id             = strip_tags(request()->post('kecamatan_id'));
+        $data->kecamatan_id             = $kecamatan[0]->id;
         $data->tgl                      = request()->post('tgl');
         $data->barang_id                = strip_tags(request()->post('barang'));
         $data->tgl_penerbitan           = request()->post('tgl_penerbitan');

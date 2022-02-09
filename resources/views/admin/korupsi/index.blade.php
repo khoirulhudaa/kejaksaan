@@ -57,7 +57,7 @@
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table table-sm table-hover" id="ebook-table">
+                            <table class="table table-sm table-hover" id="ebook-table" width="100%">
                                 <thead class="thead-light">
                                     <tr>
                                         <th>No</th>
@@ -98,6 +98,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: '{{ route('admin.korupsi.index') }}',
+                "scrollX": true,
                 columns: [
                     {
                         data: 'DT_RowIndex',
@@ -111,7 +112,7 @@
                     },
                     {
                         data: 'pasal',
-                        name: 'pasal'
+                        name: 'pasal',
                     },
                     {
                         data: 'upaya',
@@ -136,8 +137,9 @@
                     @endif
                 ],
                 buttons: [],
-                order: []
+                order: [],
             });
+
 
             // Delete one item
             $('body').on('click', '#btn-delete', function(){

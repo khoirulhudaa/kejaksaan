@@ -3,6 +3,11 @@
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('backend/modules/datatables/datatables.min.css') }}">
+    <style>
+        .width-custom {
+            width: 200px
+        }
+    </style>
 @endsection
 
 @section('content')
@@ -61,8 +66,8 @@
                                 <thead class="thead-light">
                                     <tr>
                                         <th>No</th>
-                                        <th style="width: 200px;">dentitas Terdakwa</th>
-                                        <th style="width: : 200px;overflow: hidden">Pasal yang disangkakan</th>
+                                        <th>Identitas Terdakwa</th>
+                                        <th>Pasal yang disangkakan</th>
                                         @if (auth()->user()->isAdmin())
                                             <th>Aksi</th>
                                         @elseif (auth()->user()->isOperator())
@@ -110,7 +115,8 @@
                     },
                     {
                         data: 'pasal',
-                        name: 'pasal'
+                        name: 'pasal',
+                        // className: 'width-custom',
                     },
                     @if (auth()->user()->isAdmin())
                     {
